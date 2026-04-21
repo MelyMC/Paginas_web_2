@@ -1,10 +1,14 @@
- lang="es">
+<!DOCTYPE html>
+<html lang="es">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<!-- TIPOGRAFÍA MÁS PARECIDA -->
+<!-- TIPOGRAFÍA -->
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+
+<!-- ICONOS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 <title>CV Melissa</title>
 
@@ -62,6 +66,9 @@ page{
 }
 
 .section h3{
+  display:flex;
+  align-items:center;
+  gap:10px;
   font-weight:600;
   letter-spacing:2px;
 }
@@ -108,6 +115,9 @@ page{
 }
 
 .block h2{
+  display:flex;
+  align-items:center;
+  gap:10px;
   font-size:18px;
   letter-spacing:3px;
 }
@@ -120,6 +130,15 @@ page{
 ul{
   margin-top:8px;
 }
+
+/* ICONOS ESTILO */
+i{
+  background:#555;
+  color:white;
+  border-radius:50%;
+  padding:10px;
+  font-size:14px;
+}
 </style>
 </head>
 
@@ -131,8 +150,8 @@ ul{
 <div class="left">
 
   <div class="profile">
-    <!-- 🔴 AQUÍ VA TU FOTO -->
-    <img src="https://i.imgur.com/tu-foto.jpg">
+    <!-- 🔴 AQUÍ PONES TU LINK DE IMAGEN -->
+    <img src="https://instagram.flov1-1.fna.fbcdn.net/v/t51.82787-19/670737845_18086572430580797_1291552234019818863_n.jpg?stp=dst-jpg_s150x150_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLmRqYW5nby4xMDgwLmMyIn0&_nc_ht=instagram.flov1-1.fna.fbcdn.net&_nc_cat=105&_nc_oc=Q6cZ2gGTWLv-bEgJuhH0awNV4J5zKRF44phQ_0uCHyks3_Ekj3YmbM7UXjop_8qWaQHYnia5ODfXiJ0bpw5RiT7hlDzF&_nc_ohc=nugwITJ0KekQ7kNvwEnAVLh&_nc_gid=y2HwHL7shgHSowMWwyRS6g&edm=AOQ1c0wBAAAA&ccb=7-5&oh=00_Af1ZYOKo_XKpiRdKb5vYg_gfK_xRuLKY8jFUvvgMgvFKeA&oe=69ED8804&_nc_sid=8b3546" alt="foto">
   </div>
 
   <div class="about">
@@ -143,7 +162,7 @@ ul{
   </div>
 
   <div class="section contact">
-    <h3>CONTACTO</h3>
+    <h3><i class="fas fa-user"></i> CONTACTO</h3>
     <p>Celular: 712 180 2861</p>
     <p>Correo: matiasmelmatias06@gmail.com</p>
     <p>Dirección: Calle Nereo Alanis Zamudio, Barrio de Guadalupe,
@@ -152,7 +171,7 @@ ul{
   </div>
 
   <div class="section">
-    <h3>EDUCACIÓN</h3>
+    <h3><i class="fas fa-graduation-cap"></i> EDUCACIÓN</h3>
     <p>Preescolar Artemio de Valle Arizpe</p>
     <p>Escuela Primaria Coronel Filiberto Gomez</p>
     <p>Escuela Secundaria Oficial No. 0173 Hermenegildo Galeana</p>
@@ -169,7 +188,7 @@ ul{
   <div class="divider"></div>
 
   <div class="block">
-    <h2>EXPERIENCIA LABORAL</h2>
+    <h2><i class="fas fa-briefcase"></i> EXPERIENCIA LABORAL</h2>
 
     <div class="job-title">Servivio al cliente</div>
     <p>Negocio Familiar, Enero 2020 - Julio 2025</p>
@@ -181,7 +200,7 @@ ul{
   </div>
 
   <div class="block">
-    <h2>CURSOS / IDIOMAS</h2>
+    <h2><i class="fas fa-book"></i> CURSOS / IDIOMAS</h2>
 
     <p><b>Curso de Administración en Recursos Humanos</b><br>
     Universidad de Palermo</p>
@@ -208,4 +227,5 @@ ul{
 </page>
 
 </body>
+
 </html>
