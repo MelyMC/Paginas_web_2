@@ -1,153 +1,210 @@
-<html>
-
+ lang="es">
 <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- TIPOGRAFÍA MÁS PARECIDA -->
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+
+<title>CV Melissa</title>
+
 <style>
-body {
-  background: rgb(204,204,204); 
-  margin: 0;
-  display: flex;
-  justify-content: center;
+body{
+  background: rgb(204,204,204);
+  margin:0;
+  display:flex;
+  justify-content:center;
+  font-family: 'Montserrat', sans-serif;
 }
 
-page {
-  background: white;
-  display: block;
-  width: 21cm;
-  height: 29.7cm;
-  margin: 20px auto;
-  box-shadow: 0 0 10px rgba(0,0,0,0.3);
-  padding: 0;
-}
-
-/* CONTENIDO DEL CV */
-.container{
-    display:flex;
-    height:100%;
+page{
+  width:21cm;
+  height:29.7cm;
+  background:white;
+  margin:20px auto;
+  display:flex;
+  overflow:hidden;
 }
 
 /* IZQUIERDA */
 .left{
-    width:35%;
-    background:#8FAE9B;
-    color:#222;
-    padding:30px;
-    text-align:center;
+  width:38%;
+  background:#8FAE9B;
+  padding:40px 25px;
+  color:#2b2b2b;
 }
+
+.profile{
+  display:flex;
+  justify-content:center;
+}
+
 .profile img{
-    width:180px;
-    height:180px;
-    border-radius:50%;
-    border:6px solid #fff;
-    object-fit:cover;
+  width:200px;
+  height:200px;
+  border-radius:50%;
+  border:6px solid white;
+  object-fit:cover;
 }
+
+/* TEXTO PERFIL */
 .about{
-    margin-top:15px;
-    font-style:italic;
-    line-height:1.5;
+  margin-top:25px;
+  font-size:15px;
+  line-height:1.7;
+  font-style:italic;
+  text-align:left;
 }
+
+/* SECCIONES */
 .section{
-    margin-top:25px;
-    text-align:left;
+  margin-top:30px;
 }
-.icon{
-    width:30px;
-    height:30px;
-    background:#444;
-    border-radius:50%;
-    display:inline-block;
+
+.section h3{
+  font-weight:600;
+  letter-spacing:2px;
 }
+
+.contact p{
+  margin:8px 0;
+  font-size:14px;
+}
+
 .line{
-    border-bottom:2px dashed #333;
-    margin:10px 0;
+  border-bottom:2px dashed #333;
+  margin:15px 0;
 }
 
 /* DERECHA */
 .right{
-    width:65%;
-    background:#e6e6e6;
-    padding:40px;
+  width:62%;
+  background:#e7e7e7;
+  padding:50px;
 }
+
 .name{
-    font-size:32px;
-    letter-spacing:2px;
+  font-size:40px;
+  letter-spacing:4px;
+  font-weight:600;
 }
+
 .subtitle{
-    margin-top:10px;
-    font-style:italic;
+  margin-top:15px;
+  letter-spacing:4px;
+  font-style:italic;
 }
+
 .divider{
-    height:3px;
-    background:#555;
-    margin:15px 0;
+  height:3px;
+  background:#555;
+  margin:20px 0;
+  width:70%;
 }
+
+/* BLOQUES */
 .block{
-    margin-top:20px;
+  margin-top:30px;
+}
+
+.block h2{
+  font-size:18px;
+  letter-spacing:3px;
+}
+
+.job-title{
+  font-weight:600;
+  margin-top:15px;
+}
+
+ul{
+  margin-top:8px;
 }
 </style>
 </head>
 
 <body>
 
-<page size="A4">
-    <div class="container">
+<page>
 
-        <div class="left">
-            <div class="profile">
-                <img src="https://i.imgur.com/tu-foto.jpg">
-            </div>
+<!-- IZQUIERDA -->
+<div class="left">
 
-            <div class="about">
-                Soy una persona organizada y responsable, con buenas relaciones interpersonales.
-                Siempre tengo la mejor disposición para la realización de mis actividades.
-                Busco un puesto desafiante donde pueda continuar aprendiendo diariamente,
-                explotando mis habilidades.
-            </div>
+  <div class="profile">
+    <!-- 🔴 AQUÍ VA TU FOTO -->
+    <img src="https://i.imgur.com/tu-foto.jpg">
+  </div>
 
-            <div class="section">
-                <p><b>CONTACTO</b></p>
-                <p>Celular: 712 180 2861</p>
-                <p>Correo: matiasmelmatias06@gmail.com</p>
-                <p>Dirección: Calle Nereo Alanis Zamudio, Jocotitlan, Estado de México.</p>
-                <div class="line"></div>
-            </div>
+  <div class="about">
+    Soy una persona organizada y responsable, con buenas relaciones interpersonales.
+    Siempre tengo la mejor disposición para la realización de mis actividades.
+    Busco un puesto desafiante donde pueda continuar aprendiendo diariamente,
+    explotando mis habilidades.
+  </div>
 
-            <div class="section">
-                <p><b>EDUCACIÓN</b></p>
-                <p>Preescolar Artemio de Valle Arizpe</p>
-                <p>Escuela Primaria Coronel Filiberto Gomez</p>
-                <p>Secundaria Oficial No. 0173 Hermenegildo Galeana</p>
-                <p>Preparatoria Instituto Cultural Canadiense S.C</p>
-            </div>
-        </div>
+  <div class="section contact">
+    <h3>CONTACTO</h3>
+    <p>Celular: 712 180 2861</p>
+    <p>Correo: matiasmelmatias06@gmail.com</p>
+    <p>Dirección: Calle Nereo Alanis Zamudio, Barrio de Guadalupe,
+    Jocotitlan, Estado de México.</p>
+    <div class="line"></div>
+  </div>
 
-        <div class="right">
-            <div class="name">MELISSA MATIAS CERVANTES</div>
-            <div class="subtitle">ESTUDIANTE DE NIVEL MEDIO SUPERIOR</div>
-            <div class="divider"></div>
+  <div class="section">
+    <h3>EDUCACIÓN</h3>
+    <p>Preescolar Artemio de Valle Arizpe</p>
+    <p>Escuela Primaria Coronel Filiberto Gomez</p>
+    <p>Escuela Secundaria Oficial No. 0173 Hermenegildo Galeana</p>
+    <p>Preparatoria Instituto Cultural Canadiense S.C</p>
+  </div>
 
-            <div class="block">
-                <b>EXPERIENCIA LABORAL</b>
-                <p><b>Servicio al cliente</b><br>
-                Negocio Familiar, Enero 2020 - Julio 2025</p>
-                <ul>
-                    <li>Servicio y atención al cliente</li>
-                    <li>Administración y logística</li>
-                </ul>
-            </div>
+</div>
 
-            <div class="block">
-                <b>CURSOS / IDIOMAS</b>
-                <p><b>Administración en Recursos Humanos</b> - Universidad de Palermo</p>
-                <p><b>Trigonometría</b> - UNAM</p>
-                <p><b>Soporte Técnico de Google</b> - Knotion</p>
-                <p><b>Negocios en América Latina</b> - Universidad de los Andes</p>
-                <p><b>Física y descubrimientos</b> - Universidad de los Andes</p>
-                <p><b>Nutrición y obesidad</b> - UNAM</p>
-            </div>
+<!-- DERECHA -->
+<div class="right">
 
-        </div>
+  <div class="name">MELISSA<br>MATIAS CERVANTES</div>
+  <div class="subtitle">ESTUDIANTE DE NIVEL MEDIO SUPERIOR</div>
+  <div class="divider"></div>
 
-    </div>
+  <div class="block">
+    <h2>EXPERIENCIA LABORAL</h2>
+
+    <div class="job-title">Servivio al cliente</div>
+    <p>Negocio Familiar, Enero 2020 - Julio 2025</p>
+
+    <ul>
+      <li>Servicio y atención al cliente</li>
+      <li>Servicio de administración y logística</li>
+    </ul>
+  </div>
+
+  <div class="block">
+    <h2>CURSOS / IDIOMAS</h2>
+
+    <p><b>Curso de Administración en Recursos Humanos</b><br>
+    Universidad de Palermo</p>
+
+    <p><b>Curso de Trigonometria</b><br>
+    Universidad Nacional Autonoma de México</p>
+
+    <p><b>Curso de Fundamentos del soporte Técnico de Google</b><br>
+    Instituto Knotion</p>
+
+    <p><b>Curso de Hacer Negocios con multinacionales y empresas en América latina</b><br>
+    Universidad de los Andes</p>
+
+    <p><b>Curso de Tesoros de la Física y sus descubrimientos</b><br>
+    Universidad de los Andes</p>
+
+    <p><b>Curso de Nutrición y Obesidad contra el sobre-peso</b><br>
+    Universidad Nacional Autonoma de México</p>
+
+  </div>
+
+</div>
+
 </page>
 
 </body>
